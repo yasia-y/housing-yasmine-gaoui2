@@ -7,7 +7,7 @@ app = Flask(__name__)
 conn = psycopg2.connect(
     dbname="real_estate",
     user="postgres",
-    password="2406",
+    password="newpassword",
     host="localhost",
     port="5432"
 )
@@ -51,4 +51,4 @@ def insert_property():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5000)
