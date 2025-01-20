@@ -29,8 +29,8 @@ Ce projet illustre comment intégrer une application web Flask en Python avec un
 
 ### **Étape 1 : Cloner le dépôt**
 ```bash
-git clone https://github.com/ton-username/housing-yasmine-gaoui.git
-cd housing-yasmine-gaoui
+git clone https://github.com/ton-username/housing-yasmine-gaoui2.git
+cd housing-yasmine-gaoui2
 cd housing-api
 ```
 
@@ -51,7 +51,7 @@ Modifie les identifiants PostgreSQL dans les fichiers nécessaires (par exemple,
 conn = psycopg2.connect(
     database="postgres",
     user="postgres",
-    password="votre_mot_de_passe",
+    password="newpassword",
     host="127.0.0.1",
     port="5432"
 )
