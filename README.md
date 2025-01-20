@@ -1,5 +1,3 @@
-# housing-yasmine-gaoui2
-
 Flask and PostgreSQL Integration with Python
 Overview
 
