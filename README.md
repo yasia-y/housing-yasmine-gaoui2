@@ -1,7 +1,3 @@
-Voici une version adaptée et originale pour ton README : 
-
----
-
 # Flask et Intégration avec PostgreSQL en Python
 
 ## **Vue d'ensemble**
