@@ -74,7 +74,7 @@ python db_create.py
 
 1. **Initialiser Flask-Migrate** :
    ```bash
-   export FLASK_APP=app_migration.py  # Pour Windows : set FLASK_APP=app_migration.py
+   export FLASK_APP=migrate.py  # Pour Windows : set FLASK_APP=app_migration.py
    flask db init
    ```
 
@@ -91,7 +91,7 @@ python db_create.py
 ### **Étape 3 : Lancer l'application**
 Démarre l'application Flask :
 ```bash
-python app_migration.py
+python migrate.py
 ```
 
 ---
