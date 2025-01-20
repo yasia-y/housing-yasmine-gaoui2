@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:2005@localhost:5432/real_estate'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:newpassword@localhost:5432/real_estate'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -45,7 +45,7 @@ def list_properties():
 # Route pour ajouter une propriété
 @app.route('/properties', methods=['POST'])
 def add_property():
-    data = request.json
+    data = request.get_json()
     property = Property(**data)
     db.session.add(property)
     db.session.commit()
@@ -53,4 +53,4 @@ def add_property():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
