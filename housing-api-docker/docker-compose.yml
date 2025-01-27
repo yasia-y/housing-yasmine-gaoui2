@@ -12,6 +12,12 @@ services:
       - DATABASE_URL=postgresql://user:newpassword@db/housing
     depends_on:
       - db
+   model:
+    build:
+      context: ./housing-model
+    container_name: housing-model
+    ports:
+      - "5000:5000"
 
   db:
     image: postgres:15
