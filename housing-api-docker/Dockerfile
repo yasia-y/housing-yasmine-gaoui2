@@ -1,29 +1,21 @@
-# Utiliser une version de Python compatible avec ton projet
+# Utiliser une image de base Python
 FROM python:3.11-slim
-
-# Mettre à jour les sources et installer curl et git
-RUN apt-get update && apt-get install -y curl git build-essential
-
-# Télécharger et installer Poetry (version spécifique)
-RUN curl -sSL https://install.python-poetry.org | python3 - --version 1.8.2
-
-# Ajouter Poetry au PATH de manière persistante
-ENV PATH="/root/.local/bin:$PATH"
 
 # Définir le répertoire de travail
 WORKDIR /app
 
-# Copier les fichiers de configuration
-COPY pyproject.toml poetry.lock /app/
+# Copier les fichiers nécessaires
+COPY requirements.txt requirements.txt
+COPY . .
 
-# Installer les dépendances via Poetry
-RUN poetry install --no-dev
+# Installer les dépendances
+RUN python -m venv /opt/venv && \
+    . /opt/venv/bin/activate && \
+    pip install --upgrade pip && \
+    pip install -r requirements.txt
 
-# Copier le reste du code
-COPY . /app/
-
-# Exposer le port (si nécessaire)
+# Exposer le port de l'API
 EXPOSE 8000
 
-# Commande pour démarrer l'API
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Commande de démarrage
+CMD ["/opt/venv/bin/python", "main.py"]
