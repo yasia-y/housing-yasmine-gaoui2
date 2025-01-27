@@ -1,21 +1,11 @@
-# Utiliser une image de base Python
-FROM python:3.11-slim
+# Étape de base
+FROM python:3.10-slim AS base
 
-# Définir le répertoire de travail
-WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copier les fichiers nécessaires
-COPY requirements.txt requirements.txt
+# Étape de production
+FROM base AS prod
 COPY . .
-
-# Installer les dépendances
-RUN python -m venv /opt/venv && \
-    . /opt/venv/bin/activate && \
-    pip install --upgrade pip && \
-    pip install -r requirements.txt
-
-# Exposer le port de l'API
 EXPOSE 8000
-
-# Commande de démarrage
-CMD ["/opt/venv/bin/python", "main.py"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
