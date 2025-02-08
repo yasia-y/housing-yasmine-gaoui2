@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yasia/housing-yasmine-gaoui2/housing-model/mlruns/0/208437725e5d4d90a632a581a2ec6a07/artifacts
+end_time: 1739028913768
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 208437725e5d4d90a632a581a2ec6a07
+run_name: bittersweet-carp-460
+run_uuid: 208437725e5d4d90a632a581a2ec6a07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739028911311
+status: 3
+tags: []
+user_id: yasia

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yasia/housing-yasmine-gaoui2/housing-model/mlruns/0/90603c815ba740d8ac06867f9cf12bd2/artifacts
+end_time: 1739029127653
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 90603c815ba740d8ac06867f9cf12bd2
+run_name: powerful-turtle-868
+run_uuid: 90603c815ba740d8ac06867f9cf12bd2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739029125121
+status: 3
+tags: []
+user_id: yasia

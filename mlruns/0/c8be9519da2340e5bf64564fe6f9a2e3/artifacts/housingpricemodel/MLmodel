@@ -1,0 +1,35 @@
+artifact_path: housingpricemodel
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.20.1
+model_size_bytes: 906
+model_uuid: 1662706a4d054b289730788a31f02f64
+run_id: c8be9519da2340e5bf64564fe6f9a2e3
+signature:
+  inputs: '[{"type": "double", "name": "longitude", "required": true}, {"type": "double",
+    "name": "latitude", "required": true}, {"type": "double", "name": "housing_median_age",
+    "required": true}, {"type": "double", "name": "total_rooms", "required": true},
+    {"type": "double", "name": "total_bedrooms", "required": true}, {"type": "double",
+    "name": "population", "required": true}, {"type": "double", "name": "households",
+    "required": true}, {"type": "double", "name": "median_income", "required": true},
+    {"type": "boolean", "name": "ocean_proximity_INLAND", "required": true}, {"type":
+    "boolean", "name": "ocean_proximity_ISLAND", "required": true}, {"type": "boolean",
+    "name": "ocean_proximity_NEAR BAY", "required": true}, {"type": "boolean", "name":
+    "ocean_proximity_NEAR OCEAN", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-02-08 16:52:22.137772'

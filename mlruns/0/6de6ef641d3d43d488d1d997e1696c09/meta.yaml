@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yasia/housing-yasmine-gaoui2/housing-model/mlruns/0/6de6ef641d3d43d488d1d997e1696c09/artifacts
+end_time: 1739029089282
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6de6ef641d3d43d488d1d997e1696c09
+run_name: industrious-deer-400
+run_uuid: 6de6ef641d3d43d488d1d997e1696c09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739029089275
+status: 4
+tags: []
+user_id: yasia

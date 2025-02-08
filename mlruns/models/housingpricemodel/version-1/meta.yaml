@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1739029772939
+current_stage: None
+description: ''
+last_updated_timestamp: 1739029772939
+name: housingpricemodel
+run_id: 2928fe03bcb94d568950a64fa3104f02
+run_link: ''
+source: file:///home/yasia/housing-yasmine-gaoui2/housing-model/mlruns/0/2928fe03bcb94d568950a64fa3104f02/artifacts/linear_regression_model
+status: READY
+status_message: null
+storage_location: file:///home/yasia/housing-yasmine-gaoui2/housing-model/mlruns/0/2928fe03bcb94d568950a64fa3104f02/artifacts/linear_regression_model
+user_id: null
+version: 1

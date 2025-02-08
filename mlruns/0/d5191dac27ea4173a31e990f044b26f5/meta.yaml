@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yasia/housing-yasmine-gaoui2/housing-model/mlruns/0/d5191dac27ea4173a31e990f044b26f5/artifacts
+end_time: 1739033825117
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d5191dac27ea4173a31e990f044b26f5
+run_name: unequaled-ox-976
+run_uuid: d5191dac27ea4173a31e990f044b26f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739033822400
+status: 3
+tags: []
+user_id: yasia

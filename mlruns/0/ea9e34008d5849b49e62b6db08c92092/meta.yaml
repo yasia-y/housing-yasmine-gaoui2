@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yasia/housing-yasmine-gaoui2/housing-model/mlruns/0/ea9e34008d5849b49e62b6db08c92092/artifacts
+end_time: 1739028924346
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ea9e34008d5849b49e62b6db08c92092
+run_name: stately-sloth-283
+run_uuid: ea9e34008d5849b49e62b6db08c92092
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739028921888
+status: 3
+tags: []
+user_id: yasia

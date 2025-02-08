@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yasia/housing-yasmine-gaoui2/housing-model/mlruns/0/2928fe03bcb94d568950a64fa3104f02/artifacts
+end_time: 1739029579019
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2928fe03bcb94d568950a64fa3104f02
+run_name: whimsical-kit-58
+run_uuid: 2928fe03bcb94d568950a64fa3104f02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739029576549
+status: 3
+tags: []
+user_id: yasia
